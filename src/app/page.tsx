@@ -1,8 +1,7 @@
-import "../App.css";
 
 export default function Page() {
   return (
-    <div className='container'>
+    <div className='w-screen h-screen bg-black'>
       <div className='content'>
         <img
           src={"/naver-logo.svg"}
