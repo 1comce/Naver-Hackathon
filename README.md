@@ -6,13 +6,12 @@
 
 ## 🚀 Project Setup & Usage
 **How to install and run your project:**  
-✍️  
-Example (replace with your actual steps)  
+ 
 - `npm install`  
-- `npm start`
+- `npm run dev`
 
 ## 🔗 Deployed Web URL or APK file
-✍️ [Paste your link here]
+https://naver-hackathon-two.vercel.app/
 
 
 ## 🎥 Demo Video
@@ -29,37 +28,67 @@ Example (replace with your actual steps)
 
 ### a. Overview
 
-✍️ [Write your content here]
+This is a simple To-Do App I built for the preliminary assignment. It helps students keep track of daily tasks with a clean and easy to use interface. You can add, edit, delete, and mark tasks as done. Right now, it’s using a mock API since the focus is on frontend, but everything works smoothly.
 
 ### b. Key Features & Function Manual
 
-✍️ [Write your content here, explain about your app's functions]
+➕ Add tasks – Write down what you need to do.
+
+👀 View tasks – See all your tasks in one list (supports 20+ tasks without breaking).
+
+✏️ Edit tasks – Update the task if something changes.
+
+✅ Mark complete – Check things off once you finish.
+
+❌ Delete tasks – Remove tasks when you don’t need them anymore.
+
+📱 Responsive design – Works on both desktop and mobile.
 
 ### c. Unique Features (What’s special about this app?) 
 
-✍️ [Write your content here]
+Right now, the app is quite simple and focuses on clean UI/UX so students can use it without distraction. What makes it special is that it’s lightweight, straightforward, and easy to extend. I imagine it could later evolve into a smart student time manager with features like task self schedule, reminders, or AI suggestions.
 
 ### d. Technology Stack and Implementation Methods
 
-✍️ [Write your content here]
+- Next.js
+
+- Tailwind CSS
+
+- ShadcnUI
+
+- Mock API for CRUD
+
+- Deployed on Vercel
 
 ### e. Service Architecture & Database structure (when used)
 
-✍️ [Write your content here]
+For now, tasks are stored with a mock API (fake backend). In the future, it could connect to a real backend + database for login, user accounts, and cloud storage.
 
 ## 🧠 Reflection
 
 ### a. If you had more time, what would you expand?
 
-✍️ [Write your content here]
+- Build a real backend with login/signup and database storage.
+
+- Add more calendar features (like reminders and deadlines).
+
+- Improve the statistics view with charts and insights.
+
+- Add a unique feature like smart scheduling (auto-suggest when to do tasks based on deadlines).
 
 
 ### b. If you integrate AI APIs more for your app, what would you do?
 
-✍️ [Write your content here]
+- Chats with you and motivates you when you’re procrastinating.
+
+- Suggests breaking big tasks into smaller steps.
+
+- Recommends the best times to work.
+
+- Guides focus sessions with tips.
 
 
 ## ✅ Checklist
-- [ ] Code runs without errors  
-- [ ] All required features implemented (add/edit/delete/complete tasks)  
-- [ ] All ✍️ sections are filled  
+- [x] Code runs without errors  
+- [x] All required features implemented (add/edit/delete/complete tasks)  
+- [x] All ✍️ sections are filled  
