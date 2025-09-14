@@ -174,7 +174,7 @@ const TaskCard = ({
           )}
 
           {task.status === "completed" && (
-            <div className='flex items-center space-x-2 text-sm text-green-500'>
+            <div className='flex w-full items-center space-x-2 text-sm text-green-500'>
               <CheckCircle className='w-4 h-4 text-green-500' />
               <span>Đã hoàn thành</span>
               {task.completedAt && (
@@ -182,6 +182,14 @@ const TaskCard = ({
                   {format(task.completedAt, "dd/MM HH:mm", { locale: vi })}
                 </span>
               )}
+              <Button
+                size='sm'
+                variant='outline'
+                onClick={() => onDelete(task.id)}
+                className='ml-auto text-destructive hover:text-destructive hover:bg-destructive/10'
+              >
+                <Trash2 className='w-4 h-4' />
+              </Button>
             </div>
           )}
         </div>
