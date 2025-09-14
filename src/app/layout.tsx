@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import type { Metadata } from "next";
 import "@/styles/global.css";
 export const metadata: Metadata = {

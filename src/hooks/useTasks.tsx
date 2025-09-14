@@ -67,7 +67,7 @@ export const useTasks = () => {
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
-        const parsedTasks = JSON.parse(stored).map((task: any) => ({
+        const parsedTasks = JSON.parse(stored).map((task: Task) => ({
           ...task,
           createdAt: new Date(task.createdAt),
           updatedAt: new Date(task.updatedAt),

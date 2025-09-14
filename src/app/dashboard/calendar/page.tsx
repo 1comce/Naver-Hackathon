@@ -52,18 +52,6 @@ export default function Page() {
     );
   };
 
-  const getPriorityColor = (priority: Task["priority"]) => {
-    switch (priority) {
-      case "urgent":
-        return "bg-red-500";
-      case "high":
-        return "bg-red-300";
-      case "medium":
-        return "bg-yellow-500";
-      case "low":
-        return "bg-grey-500";
-    }
-  };
   const getStatusIcon = (status: Task["status"]) => {
     switch (status) {
       case "completed":
