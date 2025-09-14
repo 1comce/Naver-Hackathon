@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../styles/global.css"
+import "@/styles/global.css";
 export const metadata: Metadata = {
   title: "Todo App",
   description: "This is a Todo App",

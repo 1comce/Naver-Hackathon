@@ -24,7 +24,7 @@ export default function Page() {
           và vượt qua những thách thức trong cuộc sống sinh viên.
         </p>
 
-        <Link href='#'>
+        <Link href='/dashboard'>
           <Button size='lg' className='text-lg px-12 py-6'>
             Vào ứng dụng
           </Button>
