@@ -7,8 +7,6 @@ import {
   BarChart3,
   Target,
   Clock,
-  TrendingUp,
-  Calendar,
   CheckCircle,
   AlertTriangle,
   Zap,
@@ -68,10 +66,10 @@ export default function Page() {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
         <Card>
           <CardContent className='p-4'>
-            <div className='flex items-center space-x-2'>
-              <Target className='w-5 h-5 text-primary' />
+            <div className='flex items-center space-x-2 text-blue-500'>
+              <Target className='w-5 h-5' />
               <div>
-                <p className='text-sm text-muted-foreground'>Tổng nhiệm vụ</p>
+                <p className='text-sm '>Tổng nhiệm vụ</p>
                 <p className='text-2xl font-bold'>{stats.totalTasks}</p>
               </div>
             </div>
@@ -80,13 +78,11 @@ export default function Page() {
 
         <Card>
           <CardContent className='p-4'>
-            <div className='flex items-center space-x-2'>
-              <CheckCircle className='w-5 h-5 text-success' />
+            <div className='flex items-center space-x-2 text-green-500'>
+              <CheckCircle className='w-5 h-5' />
               <div>
-                <p className='text-sm text-muted-foreground'>Đã hoàn thành</p>
-                <p className='text-2xl font-bold text-success'>
-                  {stats.completedTasks}
-                </p>
+                <p className='text-sm'>Đã hoàn thành</p>
+                <p className='text-2xl font-bold'>{stats.completedTasks}</p>
               </div>
             </div>
           </CardContent>
@@ -94,13 +90,11 @@ export default function Page() {
 
         <Card>
           <CardContent className='p-4'>
-            <div className='flex items-center space-x-2'>
-              <Clock className='w-5 h-5 text-warning' />
+            <div className='flex items-center space-x-2 text-yellow-500'>
+              <Clock className='w-5 h-5' />
               <div>
-                <p className='text-sm text-muted-foreground'>Đang thực hiện</p>
-                <p className='text-2xl font-bold text-warning'>
-                  {stats.inProgressTasks}
-                </p>
+                <p className='text-sm '>Đang thực hiện</p>
+                <p className='text-2xl font-bold'>{stats.inProgressTasks}</p>
               </div>
             </div>
           </CardContent>
@@ -108,13 +102,11 @@ export default function Page() {
 
         <Card>
           <CardContent className='p-4'>
-            <div className='flex items-center space-x-2'>
-              <AlertTriangle className='w-5 h-5 text-destructive' />
+            <div className='flex items-center space-x-2 text-destructive'>
+              <AlertTriangle className='w-5 h-5' />
               <div>
-                <p className='text-sm text-muted-foreground'>Quá hạn</p>
-                <p className='text-2xl font-bold text-destructive'>
-                  {stats.overdueTasks}
-                </p>
+                <p className='text-sm '>Quá hạn</p>
+                <p className='text-2xl font-bold'>{stats.overdueTasks}</p>
               </div>
             </div>
           </CardContent>

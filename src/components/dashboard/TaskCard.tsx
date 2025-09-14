@@ -56,11 +56,11 @@ const TaskCard = ({
   const getStatusColor = () => {
     switch (task.status) {
       case "completed":
-        return "border-l-success";
+        return "border-l-green-500";
       case "in-progress":
-        return "border-l-accent";
+        return "border-l-yellow-500";
       default:
-        return isOverdue ? "border-l-destructive" : "border-l-primary";
+        return isOverdue ? "border-l-destructive" : "border-l-blue-500";
     }
   };
 
