@@ -1,5 +1,5 @@
 "use client";
-import { Book, Calendar, BarChart3, Plus } from "lucide-react";
+import { Book, Calendar, BarChart3 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
