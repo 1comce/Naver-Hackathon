@@ -6,9 +6,10 @@ import {
   Clock,
   CheckCircle,
   Play,
-  MoreVertical,
   Calendar as CalendarIcon,
   AlertCircle,
+  Trash2,
+  Pencil,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { format, isAfter, isBefore, addDays } from "date-fns";
@@ -104,7 +105,7 @@ const TaskCard = ({
           </div>
 
           <Button onClick={() => onEdit(task)} variant='ghost' size='sm'>
-            <MoreVertical className='w-4 h-4' />
+            <Pencil className='w-4 h-4' />
           </Button>
         </div>
       </CardHeader>
@@ -160,6 +161,14 @@ const TaskCard = ({
                 className='flex-1'
               >
                 Hoàn thành
+              </Button>
+              <Button
+                size='sm'
+                variant='outline'
+                onClick={() => onDelete(task.id)}
+                className='text-destructive hover:text-destructive hover:bg-destructive/10'
+              >
+                <Trash2 className='w-4 h-4' />
               </Button>
             </>
           )}

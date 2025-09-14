@@ -160,7 +160,7 @@ export default function Page() {
                   key={task.id}
                   task={task}
                   onEdit={handleEditTask}
-                  onDelete={() => {}}
+                  onDelete={deleteTask}
                   onStatusChange={handleStatusChange}
                   onMarkCompleted={markCompleted}
                 />

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Task,
   TaskCategory,
@@ -57,7 +57,30 @@ const TaskForm = ({
     dueDate: initialTask?.dueDate || undefined,
     estimatedTime: initialTask?.estimatedTime || 60,
   });
-
+  useEffect(() => {
+    if (initialTask) {
+      setFormData({
+        title: initialTask.title,
+        description: initialTask.description || "",
+        category: initialTask.category,
+        priority: initialTask.priority,
+        status: initialTask.status,
+        dueDate: initialTask.dueDate,
+        estimatedTime: initialTask.estimatedTime || 60,
+      });
+    } else {
+      // reset to defaults if no task (e.g. Add new)
+      setFormData({
+        title: "",
+        description: "",
+        category: "study",
+        priority: "medium",
+        status: "todo",
+        dueDate: undefined,
+        estimatedTime: 60,
+      });
+    }
+  }, [initialTask]);
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
