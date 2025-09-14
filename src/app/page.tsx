@@ -15,7 +15,7 @@ export default function Page() {
         </div>
 
         <h1 className='text-4xl md:text-5xl font-bold text-foreground mb-6'>
-          APP Quản lý thời gian
+          Quản lý thời gian
           <span className='text-primary block mt-2'>
             hiệu quả cho sinh viên
           </span>
