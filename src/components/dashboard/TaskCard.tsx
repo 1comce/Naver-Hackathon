@@ -158,7 +158,7 @@ const TaskCard = ({
                 size='sm'
                 variant='outline'
                 onClick={() => onMarkCompleted(task.id)}
-                className='flex-1'
+                className='flex-1 text-green-500'
               >
                 Hoàn thành
               </Button>
