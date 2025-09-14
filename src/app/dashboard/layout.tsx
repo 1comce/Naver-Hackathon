@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
               </div>
               <h1 className='text-xl font-bold'>
-                TaskMaster - Quản lý thời gian sinh viên
+                TaskManager - Quản lý thời gian sinh viên
               </h1>
             </div>
           </div>

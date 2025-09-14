@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/global.css";
 export const metadata: Metadata = {
-  title: "Todo App",
+  title: "TaskManager",
   description: "This is a Todo App",
 };
 

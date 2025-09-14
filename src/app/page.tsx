@@ -9,19 +9,20 @@ export default function Page() {
           <div className='w-12 h-12 bg-primary rounded-lg flex items-center justify-center'>
             <Target className='w-7 h-7 text-primary-foreground' />
           </div>
-          <span className='text-3xl font-bold text-foreground'>TaskMaster</span>
+          <span className='text-3xl font-bold text-foreground'>
+            TaskManager
+          </span>
         </div>
 
         <h1 className='text-4xl md:text-5xl font-bold text-foreground mb-6'>
-          Quản lý thời gian
+          APP Quản lý thời gian
           <span className='text-primary block mt-2'>
             hiệu quả cho sinh viên
           </span>
         </h1>
 
         <p className='text-xl text-muted-foreground mb-12'>
-          Giải pháp số giúp sinh viên đại học Việt Nam quản lý thời gian tốt hơn
-          và vượt qua những thách thức trong cuộc sống sinh viên.
+          Ứng dụng giúp sinh viên đại học quản lý thời gian tốt hơn.
         </p>
 
         <Link href='/dashboard'>
